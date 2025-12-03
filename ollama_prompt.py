@@ -2,6 +2,8 @@ from itertools import chain
 
 from langchain_ollama import OllamaLLM
 from langchain_core.prompts import PromptTemplate
+from dotenv import load_dotenv
+load_dotenv()
 
 import os
 

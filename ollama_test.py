@@ -1,4 +1,7 @@
 from langchain_ollama import OllamaLLM
+from dotenv import load_dotenv
+load_dotenv()
+
 def main():
     llm = OllamaLLM(model="gemma3:270m", temperature=0)
     user_query = input("Enter your query: ")
