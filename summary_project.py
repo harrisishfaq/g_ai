@@ -1,4 +1,5 @@
 from langchain_ollama import ChatOllama
+from langchain.messages import SystemMessage, HumanMessage, AIMessage
 
 def main():
     print("Starting summary_project.py")
@@ -13,14 +14,21 @@ def main():
 
     llm = ChatOllama(model="gemma3:270m", temperature=0)
 
-    messages = [
-        {"role": "system", "content": "You are a helpful assistant that summarizes topics."},
-        {"role": "user", "content": f"Please provide a concise summary of 50 words of the following topic: {user_input}"}
-    ]
+    ##### METHOD 1 ####
+    system_message = SystemMessage(content="You are a helpful assistant that summarizes topics.")
+    user_message = HumanMessage(content=f"Please provide a concise summary of 50 words of the following topic: {user_input}")
+    ai_message  = llm.invoke([system_message, user_message])
 
-    response = llm.invoke(messages)
-    print("Summary:")
-    print(response.content)
+    print(ai_message.content)
+
+    ##### METHOD 2 #####
+    # messages = [
+    #     {"role": "system", "content": "You are a helpful assistant that summarizes topics."},
+    #     {"role": "user", "content": f"Please provide a concise summary of 50 words of the following topic: {user_input}"}
+    # ]
+
+    # response = llm.invoke(messages)
+    # print(response.content)
 
 if __name__ == "__main__":
     main()
