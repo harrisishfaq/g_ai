@@ -1,5 +1,6 @@
+from langchain.messages import AIMessage, HumanMessage, SystemMessage
 from langchain_ollama import ChatOllama
-from langchain.messages import SystemMessage, HumanMessage, AIMessage
+
 
 def main():
     print("Starting summary_project.py")

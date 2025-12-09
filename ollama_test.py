@@ -1,5 +1,6 @@
-from langchain_ollama import OllamaLLM
 from dotenv import load_dotenv
+from langchain_ollama import OllamaLLM
+
 load_dotenv()
 
 def main():

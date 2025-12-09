@@ -1,6 +1,4 @@
-######
-INSTALLATION
-######
+###### Basic Installation on every project ######
 1: Langchain
 2: uv
 
@@ -32,3 +30,11 @@ To Activate Ollama Server
 TO RUN SCRIPTS
 ######
 uv run main.py
+
+
+
+
+###### RAG Implementation ######
+1: uv add langchain-pinecone # FOR PINECONE VECTOR DB
+2: uv add langchainhub
+3: uv add langchain-community # FOR EXTRA INTEGRATIONS

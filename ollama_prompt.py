@@ -1,11 +1,13 @@
 from itertools import chain
 
-from langchain_ollama import OllamaLLM
-from langchain_core.prompts import PromptTemplate
 from dotenv import load_dotenv
+from langchain_core.prompts import PromptTemplate
+from langchain_ollama import OllamaLLM
+
 load_dotenv()
 
 import os
+
 
 def main():
     print("Stepping into ollama_prompt.py")
