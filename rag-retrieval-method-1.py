@@ -2,8 +2,7 @@ import os
 
 from dotenv import load_dotenv
 from langchain_classic import hub
-from langchain_classic.chains.combine_documents import \
-    create_stuff_documents_chain
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 from langchain_classic.chains.retrieval import create_retrieval_chain
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
@@ -26,11 +25,11 @@ def main():
 
     combine_document_chain = create_stuff_documents_chain(llm, prompt)
     retrieval_chain = create_retrieval_chain(
-        retriever=vector_store.as_retriever(),
-        combine_docs_chain=combine_document_chain,
+        retriever=vector_store.as_retriever(), #It is retriever from vector store
+        combine_docs_chain=combine_document_chain, #it is augmentation chain
     )
 
-
+    # Now Its time to generate the answer from the retrieval chain
     result = retrieval_chain.invoke({"input" : "What is pinecone vector database? write a paragraphg"})
     print(result['answer'].strip())
 
