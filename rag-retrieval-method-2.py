@@ -2,8 +2,7 @@ import os
 
 from dotenv import load_dotenv
 from langchain_classic import hub
-from langchain_classic.chains.combine_documents import \
-    create_stuff_documents_chain
+from langchain_classic.chains.combine_documents import create_stuff_documents_chain
 from langchain_classic.chains.retrieval import create_retrieval_chain
 from langchain_core.prompts import PromptTemplate
 from langchain_core.runnables import RunnablePassthrough
