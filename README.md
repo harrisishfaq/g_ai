@@ -38,3 +38,9 @@ uv run main.py
 1: uv add langchain-pinecone # FOR PINECONE VECTOR DB
 2: uv add langchainhub
 3: uv add langchain-community # FOR EXTRA INTEGRATIONS
+
+
+
+to run the server
+1: uv add uvicorn
+2: uv run uvicorn api:app --reload
