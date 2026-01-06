@@ -292,6 +292,7 @@ dependencies = [
     { name = "langchain-core" },
     { name = "langchain-ollama" },
     { name = "langchain-pinecone" },
+    { name = "langchain-tavily" },
     { name = "langchainhub" },
     { name = "pypdf" },
     { name = "python-dotenv" },
@@ -308,6 +309,7 @@ requires-dist = [
     { name = "langchain-core", specifier = ">=1.1.0" },
     { name = "langchain-ollama", specifier = ">=1.0.0" },
     { name = "langchain-pinecone", specifier = ">=0.2.13" },
+    { name = "langchain-tavily", specifier = ">=0.2.16" },
     { name = "langchainhub", specifier = ">=0.1.21" },
     { name = "pypdf", specifier = ">=6.4.2" },
     { name = "python-dotenv", specifier = ">=1.2.1" },
@@ -571,6 +573,21 @@ dependencies = [
 sdist = { url = "https://files.pythonhosted.org/packages/5f/e9/b52029651f6f8c0c585f26ae665a8ef34cd36a47b2590a2cd3a1a0b11d9d/langchain_pinecone-0.2.13.tar.gz", hash = "sha256:294a6da7e1a81d5805060e37639d3e4fb72cb239d651a34a4d1f81ba096f473a", size = 40655, upload-time = "2025-11-02T19:11:45.842Z" }
 wheels = [
     { url = "https://files.pythonhosted.org/packages/1e/cf/27ec504e2fa92e73d49bc49f4345d82e5b6e75158c56092f5140f6afc8bd/langchain_pinecone-0.2.13-py3-none-any.whl", hash = "sha256:2f9db3f9d8c634e8716eb8fb65a405458083c4d52810be76294665e2d75ad65a", size = 26232, upload-time = "2025-11-02T19:11:44.749Z" },
+]
+
+[[package]]
+name = "langchain-tavily"
+version = "0.2.16"
+source = { registry = "https://pypi.org/simple" }
+dependencies = [
+    { name = "aiohttp" },
+    { name = "langchain" },
+    { name = "langchain-core" },
+    { name = "requests" },
+]
+sdist = { url = "https://files.pythonhosted.org/packages/57/06/b3fa1e9ace328cb628128198132455dcc672fa0bbd9b2cc142925101e269/langchain_tavily-0.2.16.tar.gz", hash = "sha256:25d11ebc0ed270c88ff5007276ba2fb74215e125062b7d5e3733faa014f99b78", size = 25282, upload-time = "2025-12-29T22:34:19.176Z" }
+wheels = [
+    { url = "https://files.pythonhosted.org/packages/2a/05/ea818ce483daf6973e0aabf8e2d9ea38d7b162a48e47a6ef86aa395cf8a9/langchain_tavily-0.2.16-py3-none-any.whl", hash = "sha256:3cae3551d690069fe204ef719e53bb8353cb12e7449b16e8a7588a16e1a6304e", size = 30715, upload-time = "2025-12-29T22:34:18.005Z" },
 ]
 
 [[package]]

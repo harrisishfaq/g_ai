@@ -25,7 +25,8 @@ def main():
         template=template,
     )
 
-    llm = OllamaLLM(model="gemma3:270m", temperature=0)
+    # llm = OllamaLLM(model="gemma3:270m", temperature=0)
+    llm = OllamaLLM(model="mistral:latest", temperature=0)
 
     chain = prompt | llm
 

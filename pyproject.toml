@@ -13,6 +13,7 @@ dependencies = [
     "langchain-core>=1.1.0",
     "langchain-ollama>=1.0.0",
     "langchain-pinecone>=0.2.13",
+    "langchain-tavily>=0.2.16",
     "langchainhub>=0.1.21",
     "pypdf>=6.4.2",
     "python-dotenv>=1.2.1",
